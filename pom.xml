@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project
+  xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+  <!-- POM file generated with GWT webAppCreator -->
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.octo</groupId>
+  <artifactId>randomizer</artifactId>
+  <packaging>war</packaging>
+  <version>1.0-SNAPSHOT</version>
+  <name>Randomizer !</name>
+
+  <properties>
+		<spring.version>3.0.5.RELEASE</spring.version>
+	</properties>
+
+	<repositories>
+		<repository>
+			<id>SpringSource Enterprise Bundle Repository - External Bundle
+				Milestones</id>
+			<url>http://repository.springsource.com/maven/bundles/milestone</url>
+		</repository>
+		<repository>
+			<id>SpringSource Enterprise Bundle Repository - SpringSource Bundle
+				Releases</id>
+			<url>http://repository.springsource.com/maven/bundles/release</url>
+		</repository>
+		<repository>
+			<id>SpringSource Enterprise Bundle Repository - External Bundle
+				Releases</id>
+			<url>http://repository.springsource.com/maven/bundles/external</url>
+		</repository>
+	</repositories>
+
+	<dependencies>
+		<!-- Spring 3 dependencies -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-core</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-web</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+
+		<!-- Jackson JSON Mapper -->
+		<dependency>
+			<groupId>org.codehaus.jackson</groupId>
+			<artifactId>jackson-mapper-asl</artifactId>
+			<version>1.7.1</version>
+		</dependency>
+
+
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.4</version>
+			<scope>test</scope>
+		</dependency>
+
+	</dependencies>
+</project>
